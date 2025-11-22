@@ -1,0 +1,14 @@
+<h1>{{ title }}</h1>
+<div #content class="content-box">
+  Contenido inicial del div.
+</div>
+
+<button (click)="addItem()">Añadir ítem</button>
+
+<ul>
+  <li *ngFor="let item of items">{{ item }}</li>
+</ul>
+
+<input type="text" (input)="onInputChange($event)" placeholder="Escribe algo" />
+
+<p>{{ inputText }}</p>
